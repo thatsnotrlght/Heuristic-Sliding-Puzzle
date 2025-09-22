@@ -8,16 +8,27 @@
     <script src="index.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="header">
         <h1>8-Puzzle Game</h1>
     </div>
 
-    <div class="dropdown">
-        <select>
-            <option>A*</option>
-            <option>DFS</option>
-            <option>BFS</option>
-        </select>
-    </div>
+    <main>
+        <label for="myfile"></label>
+        <input type="file" id="myfile" name="myfile">
+
+        <button>Shuffle</button>
+        <button>Solve</button>
+        <div class="dropdown">
+            <select>
+                <option>A*</option>
+                <option>DFS</option>
+                <option>BFS</option>
+            </select>
+        </div>
+
+        <section>
+            <p>Canvas</p>
+        </section>
+    </main>
 </body>
 </html>
