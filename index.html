@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>8-Puzzle Game</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="index.js"></script>
 </head>
 <body>
     <div class="header">
@@ -13,8 +12,8 @@
     </div>
 
     <main>
-        <label for="myfile"></label>
-        <input type="file" id="myfile" name="myfile">
+        <label for="fileInput"></label>
+        <input type="file" id="fileInput" name="fileInput" accept="image/*">
 
         <button>Shuffle</button>
         <button>Solve</button>
@@ -26,9 +25,11 @@
             </select>
         </div>
 
-        <section>
-            <p>Canvas</p>
+        <section id = "canvas">
+            <p>Image will appear here</p>
         </section>
     </main>
+    <script src="index.js"></script>
+
 </body>
 </html>
