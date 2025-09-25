@@ -24,14 +24,30 @@ main {
     border-radius:4px;
 }
 
+.tile {
+    background-color: aqua;
+    width:100px;
+    height:100px;
+    background-size: 300px 300px;
+    border: 1px solid black;
+}
+
+.empty {
+    background: #eee;
+}
+
 #canvas {
     /* background-color: yellow; */
-    width: 350px;
+    display:grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+
+    /* width: 350px;
     height: 350px;
     border: 2px solid black;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 #canvas img {
