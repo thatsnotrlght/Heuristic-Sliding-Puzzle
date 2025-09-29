@@ -14,20 +14,28 @@
     <main>
         <label for="fileInput"></label>
         <input type="file" id="fileInput" name="fileInput" accept="image/*">
-
-        <button>Shuffle</button>
-        <button>Solve</button>
+        <div class="buttons">
+            <button>Shuffle</button>
+            <button id = "solveButton">Solve</button>
+        </div>
         <div class="dropdown">
             <select>
                 <option>A*</option>
-                <option>DFS</option>
-                <option>BFS</option>
+                <!-- <option>DFS</option>
+                <option>BFS</option> -->
             </select>
         </div>
 
         <section id = "canvas">
-            <p>Image will appear here</p>
         </section>
+        <div id="stats-container">
+            <h3>Solver Statistics</h3>
+            <p>Algorithm: <span id="algo-name">A* Search (Manhattan Distance)</span></p>
+            <p>Moves Taken: <span id="moves-count">0</span></p>
+            <p>Nodes Explored: <span id="nodes-explored">0</span></p>
+            <p>Time Taken: <span id="time-taken">0ms</span></p>
+        </div>
+
     </main>
     <script src="index.js"></script>
 
